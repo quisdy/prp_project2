@@ -1,0 +1,154 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	display: inline-block;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.btn-reset {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.section-margin:not(:last-child) {
+	margin-bottom: 70px;
+}
+
+.section-title {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.h3-title {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+
+
+
+/* HEADER */
+
+.header {
+	margin-bottom: 70px;
+}
+
+.header-top {
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.company-info {
+	align-items: center;
+	gap: 40px;
+}
+
+.header-navigation {
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 45px;
+}
+
+.header-nav-list {
+	gap: 45px;
+}
+
+.btn-list {
+	gap: 40px;
+}
+
+
+
+
+/* SPECIAL OFFERS */
+
+
+.special-offers-list {
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.special-offers-item {
+	width: 573px;
+}
+
+.title-h2 {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+
+
+
+/* ABOUT US */
+
+/* SERVICES */
+
+.services-list {
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.service-item {
+	width: 573px;
+}
+
+
+
+
+/* ADVANTAGES */
+
+.advantages-list {
+	flex-wrap: wrap;
+	gap: 22px;
+}
+
+.advantages-item{
+	width: 276px;
+}
+
+
+
+
+/* PLACEMENT */
+
+.placement-list{
+	flex-wrap: wrap;
+	gap: 24px;
+}
