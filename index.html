@@ -5,13 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lagoona</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header-top">
-				<div class="company-info">
+			<div class="header-top flex">
+				<div class="company-info flex">
 					<img src="img/logo.svg" alt="Logo" class="header-logo">
 					<a href="tel:+74953225448" class="company-info-link">
 						+7&nbsp;495 322-54-48
@@ -22,9 +24,9 @@
 				</a>
 			</div>
 
-			<div class="header-navigation">
+			<div class="flex header-navigation">
 				<nav class="header-nav">
-					<ul class="header-nav-list">
+					<ul class="list-reset flex header-nav-list">
 						<li class="header-list-item">
 							<a href="#" class="header-item-link">
 								О&nbsp;нас
@@ -57,11 +59,11 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="header-list btn-list">
-					<button class="btn">
+				<div class="flex btn-list">
+					<button class="btn-reset btn">
 						Хочу тур
 					</button>
-					<button class="btn">
+					<button class="btn-reset btn">
 						Обратный звонок
 					</button>
 				</div>
@@ -70,57 +72,65 @@
 	</header>
 
 	<main class="main">
-		<section class="section-special-offers">
+		<section class="section-special-offers section-margin">
 			<div class="container">
 				<h2 class="section-title special-offers-title">
 					Спецпредложения
 				</h2>
-				<ul class="special-offers-list">
+				<ul class="list-reset flex special-offers-list">
 					<li class="special-offers-item maldives">
 						<article class="special-offers-article">
 							<h3 class="special-offers-title">
 								Мальдивские острова
 							</h3>
-							<p class="article-price">
-								от&nbsp;55&nbsp;000&nbsp;₽
-							</p>
-							<a href="#" class="special-offers-link link-arrow">
-								Подробнее
-							</a>
+							<div class="offer-desc flex">
+								<p class="article-price">
+									от&nbsp;55&nbsp;000&nbsp;₽
+								</p>
+								<a href="#" class="special-offers-link link-arrow">
+									Подробнее
+								</a>
+							</div>
 						</article>
 					</li>
-					<li class="special-offers-item crete">
-						<article class="special-offers-article">
-							<h3 class="special-offers-title">
-								Горящий тур на&nbsp;остров Крит
-							</h3>
-							<p class="article-price">
-								от&nbsp;30&nbsp;000&nbsp;₽
-							</p>
-							<a href="#" class="special-offers-link link-arrow">
-								Подробнее
-							</a>
-						</article>
-					</li>
+
 					<li class="special-offers-item lixe">
 						<article class="special-offers-article">
 							<h3 class="special-offers-title">
 								Номера категории люкс
 							</h3>
-							<p class="article-price">
-								от&nbsp;5&nbsp;000&nbsp;₽
-							</p>
-							<a href="#" class="special-offers-link link-arrow">
-								Подробнее
-							</a>
+							<div class="offer-desc flex">
+								<p class="article-price">
+									от&nbsp;5&nbsp;000&nbsp;₽
+								</p>
+								<a href="#" class="special-offers-link link-arrow">
+									Подробнее
+								</a>
+							</div>
+						</article>
+					</li>
+
+					<li class="special-offers-item crete">
+						<article class="special-offers-article">
+							<h3 class="special-offers-title">
+								Горящий тур на&nbsp;остров Крит
+							</h3>
+							<div class="offer-desc flex">
+								<p class="article-price">
+									от&nbsp;30&nbsp;000&nbsp;₽
+								</p>
+								<a href="#" class="special-offers-link link-arrow">
+									Подробнее
+								</a>
+							</div>
 						</article>
 					</li>
 				</ul>
 			</div>
 		</section>
 
-		<section class="section-about-us">
-			<div class="container">
+		<section class="section-about-us section-margin">
+			<div class="container about-us-container">
 				<h2 class="section-title about-us-title">
 					О&nbsp;нас
 				</h2>
@@ -135,15 +145,17 @@
 			</div>
 		</section>
 
-		<section class="section-services">
+		<section class="section-services section-margin">
 			<div class="container">
 				<h2 class="section-title services-title">
 					Услуги
 				</h2>
-				<ul class="services-list">
+				<ul class="flex list-reset services-list">
 					<li class="service-item item-bg-1">
 						<a href="#" class="services-link link-arrow">
-							Эксклюзивное обслуживание
+							<h3 class="h3-title">
+								Эксклюзивное обслуживание
+							</h3>
 						</a>
 						<p class="service-item-desk">
 							Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
@@ -151,7 +163,9 @@
 					</li>
 					<li class="service-item item-bg-2">
 						<a href="#" class="services-link link-arrow">
-							Аренда банкетных залов
+							<h3 class="h3-title">
+								Аренда банкетных залов
+							</h3>
 						</a>
 						<p class="service-item-desk">
 							Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
@@ -159,7 +173,9 @@
 					</li>
 					<li class="service-item item-bg-3">
 						<a href="#" class="services-link link-arrow">
-							Сауны, бассейны, бани, фитнес-залы
+							<h3 class="h3-title">
+								Сауны, бассейны, бани, фитнес-залы
+							</h3>
 						</a>
 						<p class="service-item-desk">
 							Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
@@ -167,7 +183,9 @@
 					</li>
 					<li class="service-item item-bg-4">
 						<a href="#" class="services-link link-arrow">
-							Охраняемые автомобильные стоянки
+							<h3 class="h3-title">
+								Охраняемые автомобильные стоянки
+							</h3>
 						</a>
 						<p class="service-item-desk">
 							Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
@@ -177,13 +195,13 @@
 			</div>
 		</section>
 
-		<section class="section-advantages">
+		<section class="section-advantages section-margin">
 			<div class="container">
 				<h2 class="section-title advantages-title">
 					Преимущества
 				</h2>
 
-				<ul class="advantages-list">
+				<ul class="flex list-reset advantages-list">
 					<li class="advantages-item advantages-item-bg-1">
 						<p class="advantages-item-desk">
 							Идейные соображения высшего порядка,
@@ -229,12 +247,12 @@
 			</div>
 		</section>
 
-		<section class="section-placement">
+		<section class="section-placement section-margin">
 			<div class="container">
 				<h2 class="section-title placement-title">
 					Размещение
 				</h2>
-				<ul class="placement-list">
+				<ul class="flex list-reset placement-list">
 					<li class="placement-item">
 
 						<img src="img/placement-hotel-1.jpg" alt="Фотография отеля Lagoona española" class="placement-photo">
@@ -247,13 +265,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona espa&ntilde;ola
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -278,13 +296,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona son t&iacute;picas
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -308,13 +326,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona de la guerra
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -338,13 +356,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona mentira piadosa
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -368,13 +386,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona empujar la creatividad
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -398,13 +416,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona el retorno
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -428,13 +446,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona mentira piadosa
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
@@ -458,13 +476,13 @@
 										/ ночь
 									</span>
 								</p>
-								<p class="placement-desk-text placement-text-line-height">
+								<h3 class="h3-title placement-desk-text placement-text-line-height">
 									Lagoona suerte sigui&oacute; siempre
-								</p>
+								</h3>
 								<p class="placement-desk-text placement-text-gray">
 									Барселона, Испания
 								</p>
-								<button class="btn placement-btn">
+								<button class="btn-reset btn placement-btn">
 									Номера
 								</button>
 							</div>
