@@ -1,3 +1,44 @@
+@font-face {
+	font-family: 'Muller';
+	src: local("MullerLight"),
+		url(../fonts/MullerLight.woff2) format("woff2"),
+		url(../fonts/MullerLight.woff) format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: local("MullerRegular"),
+		url(../fonts/MullerRegular.woff2) format("woff2"),
+		url(../fonts/MullerRegular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: local("MullerMedium"),
+		url(../fonts/MullerMedium.woff2) format("woff2"),
+		url(../fonts/MullerMedium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: local("MullerBold"),
+		url(../fonts/MullerBold.woff2) format("woff2"),
+		url(../fonts/MullerBold.woff) format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+
 html {
 	box-sizing: border-box;
 }
@@ -6,6 +47,14 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
+}
+
+body {
+	background-color: #F1F1F1;
+	font-family: 'Muller', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 200%;
 }
 
 p {
@@ -52,11 +101,29 @@ img {
 .section-title {
 	margin: 0;
 	margin-bottom: 20px;
+	margin-left: 40px;
+	color: #333333;
+	text-align: left;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.title-h2 {
+	margin: 0;
+	margin-bottom: 15px;
 }
 
 .h3-title {
 	margin: 0;
 	margin-bottom: 15px;
+}
+
+.btn {
+	padding: 13px 20px;
+	background-color: inherit;
+	color: #CC9933;
+	border: 1px solid #CC9933;
+	border-radius: 10px;
 }
 
 
@@ -65,6 +132,7 @@ img {
 /* HEADER */
 
 .header {
+	margin-top: 30px;
 	margin-bottom: 70px;
 }
 
@@ -79,14 +147,33 @@ img {
 	gap: 40px;
 }
 
+.company-info-link {
+	color: #666666;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.header-link-account {
+	justify-content: space-between;
+	align-items: center;
+	gap: 5px;
+	color: #CC9933;
+}
+
 .header-navigation {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 45px;
+	background-color: #fff;
+	border-radius: 15px;
 }
 
 .header-nav-list {
 	gap: 45px;
+}
+
+.header-item-link {
+	color: #666666;
 }
 
 .btn-list {
@@ -98,25 +185,97 @@ img {
 
 /* SPECIAL OFFERS */
 
-
 .special-offers-list {
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	gap: 24px;
+	line-height: normal;
 }
 
 .special-offers-item {
 	width: 573px;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding: 40px 45px;
+	border-radius: 15px;
+	background-position: center;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	color: #fff;
 }
 
-.title-h2 {
-	margin: 0;
+.special-offers-article {
+	width: fit-content;
+}
+
+.maldives {
+	background: linear-gradient(to right, rgba(48, 64, 89, 0.84), rgba(0, 0, 0, 0)), url(../img/special-offers-1.png);
+}
+
+.crete {
+	background: linear-gradient(to right, rgba(48, 64, 89, 0.84), rgba(0, 0, 0, 0)), url(../img/special-offers-2.png);
+}
+
+.lixe {
+	background-image: url(../img/special-offers-3.png);
+	grid-row: span 2;
+	align-items: end;
+}
+
+.lixe .special-offers-title {
+	font-size: 60px;
+}
+
+.lixe .article-price {
+	font-size: 30px;
+}
+
+.special-offers-title {
+	max-width: 420px;
+	font-size: 40px;
+	font-weight: 600;
 	margin-bottom: 15px;
+}
+
+.offer-desc {
+	flex-direction: column;
+	gap: 47px;
+}
+
+.article-price {
+	font-size: 20px;
+}
+
+
+special-offers-link {
+	display: inline-block;
+}
+
+.link-arrow {
+	width: fit-content;
+	color: #F0BF5F;
+	background-image: url(../img/arrow.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 16px 16px;
+	padding-right: 20px;
 }
 
 
 
 
 /* ABOUT US */
+
+.section-desk {
+	max-width: 888px;
+}
+
+
+
+
 
 /* SERVICES */
 
@@ -127,10 +286,44 @@ img {
 
 .service-item {
 	width: 573px;
+	padding-top: 190px;
+	padding-left: 45px;
+	padding-bottom: 35px;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	border-radius: 15px;
 }
 
+.item-bg-1 {
+	background-image: url(../img/service-img-1.jpg);
+}
 
+.item-bg-2 {
+	background-image: url(../img/service-img-2.jpg);
+}
 
+.item-bg-3 {
+	background-image: url(../img/service-img-3.jpg);
+}
+
+.item-bg-4 {
+	background-image: url(../img/service-img-4.jpg);
+}
+
+.services-title-h3 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.service-item-desk {
+	max-width: 402px;
+}
 
 /* ADVANTAGES */
 
@@ -139,8 +332,45 @@ img {
 	gap: 22px;
 }
 
-.advantages-item{
+.advantages-item {
 	width: 276px;
+	padding: 116px 45px 32px;
+	background-repeat: no-repeat;
+	background-position: 45px 40px;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.advantages-item-bg-1 {
+	background-image: url(../img/advantages-1.svg);
+}
+
+.advantages-item-bg-2 {
+	background-image: url(../img/advantages-2.svg);
+}
+
+.advantages-item-bg-3 {
+	background-image: url(../img/advantages-3.svg);
+}
+
+.advantages-item-bg-4 {
+	background-image: url(../img/advantages-4.svg);
+}
+
+.advantages-item-bg-5 {
+	background-image: url(../img/advantages-5.svg);
+}
+
+.advantages-item-bg-6 {
+	background-image: url(../img/advantages-6.svg);
+}
+
+.advantages-item-bg-7 {
+	background-image: url(../img/advantages-7.svg);
+}
+
+.advantages-item-bg-8 {
+	background-image: url(../img/advantages-8.svg);
 }
 
 
@@ -148,7 +378,64 @@ img {
 
 /* PLACEMENT */
 
-.placement-list{
+.placement-list {
 	flex-wrap: wrap;
 	gap: 24px;
+	line-height: normal;
+}
+
+.placement-item {
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.placement-info {
+	position: relative;
+	padding: 32px 0 45px 45px;
+}
+
+.star-rating {
+	position: absolute;
+	top: 35px;
+	right: 45px;
+}
+
+.placement-text-gray {
+	color: #999999;
+}
+
+.placement-text-bold {
+	font-weight: 600;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.placement-desk-text:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.placement-desk h3 {
+	font-weight: 400;
+}
+
+
+.placement-item:last-child {
+	width: 374px;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url(../img/placement-last.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.placement-link {
+	color: #fff;
+	width: fit-content;
+	margin: 9px;
+	background-image: url(../img/arrow-white.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 16px 16px;
+	padding-right: 20px;
 }
