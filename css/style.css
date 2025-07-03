@@ -90,11 +90,10 @@ img {
 
 .container {
 	max-width: 1200px;
-	padding: 0 15px;
 	margin: 0 auto;
 }
 
-.section-margin:not(:last-child) {
+.section-margin {
 	margin-bottom: 70px;
 }
 
@@ -438,4 +437,166 @@ special-offers-link {
 	background-position: right center;
 	background-size: 16px 16px;
 	padding-right: 20px;
+}
+
+
+
+
+
+/* BOOK A TOUR */
+.book-tour-container {
+	padding: 45px 40px;
+	background-color: #E9E9E9;
+	border-radius: 15px;
+}
+
+.book-tour-title {
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+
+.form-container {
+	padding: 31px 28px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.select-section {
+	justify-content: space-between;
+}
+
+.form-label {
+	flex-direction: column;
+	font-size: 12px;
+	line-height: 100%;
+	gap: 15px;
+}
+
+.form-select {
+	width: 169px;
+	border: none;
+	gap: 20px;
+	font-size: 16px;
+	appearance: none;
+	overflow: hidden;
+	background: url('../img/triangle.svg') no-repeat;
+	background-size: 10px 6px;
+	background-position: 159px center;
+}
+
+.form-data {
+	width: 121px;
+	border: none;
+	font-size: 16px;
+}
+
+.form-input-number {
+	width: 121px;
+	border: none;
+	border-bottom: 1px solid #E9E9E9;
+	font-size: 16px;
+}
+
+
+
+
+
+/* CONTACTS */
+.contacts-wrapper {
+	width: 100%;
+	justify-content: space-between;
+	gap: 52px;
+	padding: 45px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.contacts-address {
+	width: 100%;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.contacts-item {
+	justify-content: space-between;
+	border-bottom: 1px solid #E9E9E9;
+	min-height: 72px;
+}
+
+.contacts-item:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.contacts-item:last-child {
+	margin-bottom: 45px;
+}
+
+.contacts-item-caption {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.contacts-desk {
+	width: 229px;
+	margin-bottom: 23px;
+}
+
+.contacts-item-link {
+	color: #CC9933;
+}
+
+.contacts-link-desk {
+	color: #999999;
+}
+
+.btn-contacts {
+	padding: 27px 30px;
+}
+
+
+
+
+
+/* FOOTER */
+.footer-container {
+	justify-content: space-between;
+	padding: 45px;
+	background-color: #333333;
+	border-radius: 15px;
+	color: #fff;
+	background-image: url(../img/footer-bg.svg);
+	background-repeat: no-repeat;
+	background-size: 254px 228px;
+	background-position: 739px bottom;
+}
+
+.footer-info {
+	max-width: 302px;
+	line-height: 190%;
+}
+
+.footer-info-list {
+	flex-direction: column;
+	gap: 40px;
+}
+
+.footer-link {
+	color: #CC9933;
+}
+
+.footer-adresses-list {
+	flex-direction: column;
+	gap: 15px;
+	line-height: 150%;
+}
+
+.social-list {
+	flex-direction: column;
+	gap: 20px;
+}
+
+.social-list-item svg {
+	height: 25px;
+	width: 25px;
 }
