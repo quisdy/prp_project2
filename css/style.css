@@ -125,6 +125,17 @@ img {
 	border-radius: 10px;
 }
 
+.btn:focus,
+.btn:hover {
+	color: #FFF;
+	background-color: #CC9933;
+}
+
+.btn:active {
+	background-color: #A47312;
+	border: 1px solid #A47312;
+}
+
 
 
 
@@ -150,6 +161,7 @@ img {
 	color: #666666;
 	font-weight: 500;
 	font-size: 20px;
+	line-height: 100%;
 }
 
 .header-link-account {
@@ -157,7 +169,42 @@ img {
 	align-items: center;
 	gap: 5px;
 	color: #CC9933;
+	line-height: 100%;
 }
+
+.header-link-account:hover,
+.contacts-item-link:hover,
+.services-link:hover {
+	color: #F0BF5F;
+}
+
+.header-link-account path {
+	fill: #CC9933;
+}
+
+.header-link-account:hover path {
+	fill: #F0BF5F;
+}
+
+.header-link-account:active path {
+	fill: #A47312;
+}
+
+.service-item path {
+	fill: transparent;
+	stroke: #CC9933;
+}
+
+.service-item:hover path {
+	fill: transparent;
+	stroke: #F0BF5F;
+}
+
+.service-item:active path {
+	fill: transparent;
+	stroke: #A47312;
+}
+
 
 .header-navigation {
 	justify-content: space-between;
@@ -171,8 +218,34 @@ img {
 	gap: 45px;
 }
 
+.header-list-item {
+	line-height: 100%;
+}
+
 .header-item-link {
 	color: #666666;
+}
+
+.header-item-link:focus,
+.company-info-link:focus,
+.header-link-account:focus,
+.contacts-item-link:focus {
+	line-height: 100%;
+	outline-offset: 5px;
+	outline: 1px solid #CC9933;
+	color: #CC9933;
+}
+
+.header-item-link:hover,
+.company-info-link:hover {
+	color: #CC9933;
+}
+
+.header-item-link:active,
+.company-info-link:active,
+.header-link-account:active,
+.contacts-item-link:active {
+	color: #A47312;
 }
 
 .btn-list {
@@ -204,6 +277,7 @@ img {
 	background-size: cover !important;
 	background-repeat: no-repeat;
 	color: #fff;
+	cursor: pointer;
 }
 
 .special-offers-article {
@@ -248,19 +322,30 @@ img {
 	font-size: 20px;
 }
 
-
-special-offers-link {
-	display: inline-block;
-}
-
 .link-arrow {
-	width: fit-content;
-	color: #F0BF5F;
 	background-image: url(../img/arrow.svg);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: 16px 16px;
 	padding-right: 20px;
+}
+
+.special-offers-link {
+	gap: 10px;
+	color: #F0BF5F;
+}
+
+.special-offers-item:hover .special-offers-link {
+	gap: 20px;
+}
+
+.special-offers-item:hover .special-offers-link {
+	gap: 20px;
+}
+
+.special-offers-item:active .special-offers-link {
+	gap: 20px;
+	color: #fff;
 }
 
 
@@ -323,6 +408,40 @@ special-offers-link {
 .service-item-desk {
 	max-width: 402px;
 }
+
+.services-link {
+	gap: 10px;
+	align-items: center;
+	color: #CC9933;
+}
+
+.service-item:focus .services-link {
+	color: #CC9933;
+}
+
+.service-item:focus,
+.special-offers-item:focus {
+	outline: 1px solid #CC9933;
+	outline-offset: 8px;
+	position: relative;
+	z-index: 1;
+}
+
+.service-item:hover .services-link {
+	outline: none;
+	color: #F0BF5F;
+	gap: 20px;
+}
+
+.service-item:active .services-link {
+	outline: none;
+	color: #A47312;
+	gap: 10px;
+}
+
+
+
+
 
 /* ADVANTAGES */
 
