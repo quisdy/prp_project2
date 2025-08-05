@@ -715,7 +715,20 @@ img {
 	gap: 20px;
 }
 
-.social-list-item svg {
+.social-link path {
+	fill: #999999;
 	height: 25px;
 	width: 25px;
+}
+
+.social-link:focus path {
+	fill: #CC9933;
+}
+
+.social-link:hover path {
+	fill: #CC9933;
+}
+
+.social-link:active path {
+	fill: #A47312;
 }
